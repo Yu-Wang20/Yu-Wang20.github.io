@@ -1,0 +1,188 @@
+/* ---------- Base ---------- */
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 40px 40px 96px;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 0 72px;
+}
+
+.site-name {
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: #A8842C;
+  text-transform: uppercase;
+}
+
+.site-name a {
+  color: inherit;
+}
+
+.site-name a:hover {
+  text-decoration: none;
+  color: #8e6f24;
+}
+
+.nav {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.nav a {
+  margin-left: 26px;
+  text-transform: uppercase;
+}
+
+.nav a:first-child {
+  margin-left: 0;
+}
+
+.nav a:hover {
+  color: #1e40af;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin: 0 0 32px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin: 44px 0 14px;
+}
+
+/* ---------- Content ---------- */
+p {
+  margin: 0 0 18px;
+}
+
+ul {
+  padding-left: 22px;
+  margin: 0 0 18px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+.muted {
+  color: #777;
+}
+
+/* Course number styling */
+.course-num {
+  font-weight: bold;
+}
+
+/* ---------- Projects ---------- */
+.project {
+  margin-bottom: 2em;
+}
+
+.project-title {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.15em;
+  margin: 0 0 0.3em;
+}
+
+.project-context {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95em;
+  margin: 0 0 0.3em;
+}
+
+.project-desc {
+  margin: 0;
+}
+
+/* ---------- Avatar ---------- */
+.avatar {
+  float: right;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  margin: 0 0 16px 28px;
+  border: 1px solid #e5e5e5;
+  shape-outside: circle(50%);
+}
+
+.intro p {
+  margin-bottom: 1.1em;
+}
+
+.intro::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 28px 22px 64px;
+  }
+
+  .topbar {
+    margin-bottom: 44px;
+  }
+
+  .nav a {
+    margin-left: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .avatar {
+    float: none;
+    display: block;
+    margin: 0 auto 24px;
+    width: 170px;
+    height: 170px;
+    shape-outside: none;
+  }
+}
