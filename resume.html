@@ -19,7 +19,98 @@
 
     <main>
       <h1>Resume</h1>
-      <p class="muted">Coming soon.</p>
+
+      <p class="resume-meta">
+        Yu Wang &middot; Champaign, IL &middot;
+        <a href="mailto:yuw17@illinois.edu">yuw17@illinois.edu</a> &middot;
+        +1 (908) 416-0375
+      </p>
+      <p class="resume-actions">
+        <a href="Resume.pdf">Download PDF</a>
+      </p>
+
+      <section class="resume-section">
+        <h2>Education</h2>
+        <div class="resume-entry">
+          <p class="resume-entry-head">
+            <span class="resume-entry-title">University of Illinois Urbana-Champaign</span>
+            <span class="resume-entry-date">Expected Graduation: May 2027</span>
+          </p>
+          <p class="resume-entry-sub">
+            <span>Bachelor of Science in Statistics, Minor in Computer Science</span>
+            <span>GPA: 3.85 / 4.0</span>
+          </p>
+          <p>
+            <strong>Relevant Courses:</strong>
+            Data Structures; Statistical Modeling; Statistical Learning; Unsupervised Learning;
+            Applied Bayesian Analysis; Data Management; Probability &amp; Statistics; Linear Algebra;
+            Discrete Structures.
+          </p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Projects</h2>
+
+        <div class="resume-entry">
+          <p class="resume-entry-head">
+            <span class="resume-entry-title">Medical Insurance Cost Drivers Analysis</span>
+            <span class="resume-entry-date">Advanced Statistical Modeling</span>
+          </p>
+          <ul>
+            <li>Engineered an OLS regression model with stepwise selection (AIC/BIC) and 10-fold CV to quantify insurance cost drivers, rigorously validating features via partial F-tests.</li>
+            <li>Diagnosed and resolved severe heteroscedasticity (via Breusch-Pagan tests) by uncovering a structural smoker &times; BMI interaction, restoring homoscedasticity without relying on uninterpretable Box-Cox transformations.</li>
+            <li>Tested polynomial and spline alternatives against a parsimonious interaction model on 1,338 records; the interaction model cut Test RMSE 28.5% and isolated a $14,937/yr obese-smoker cost penalty.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <p class="resume-entry-head">
+            <span class="resume-entry-title">Parametric &amp; Non-Parametric ML on Football Betting Markets</span>
+            <span class="resume-entry-date">Statistical Learning</span>
+          </p>
+          <ul>
+            <li>Applied PCA + K-Means on 42,536 matches to identify four distinct market regimes, pinpointing exactly where the favourite-longshot bias is strong versus where bookmakers are already well-calibrated.</li>
+            <li>Benchmarked Elastic Net, Random Forest, and XGBoost against the classical Shin baseline on Brier score, log loss, and AUC, showing ML only adds value in inefficient regimes rather than uniformly across the market.</li>
+            <li>Back-tested EV strategies against Bet365 closing odds (10,000+ matches), slashing unconditional losses from -6.53% to -3.10% ROI to prove theoretical statistical edge cannot overcome structural bookmaker margins.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <p class="resume-entry-head">
+            <span class="resume-entry-title">Contact Center Intraday Forecasting</span>
+            <span class="resume-entry-date">Datathon</span>
+          </p>
+          <ul>
+            <li>Architected a two-stage hierarchical pipeline, ensembling empirical intraday profiles with a LightGBM regressor to forecast multi-metric targets while strictly satisfying zero-leakage daily sum constraints.</li>
+            <li>Optimized an unlisted asymmetric loss function via Decision Theory; injected a calibrated 5% upper-quantile bias at the interval level to strategically disperse integer-rounding noise and minimize penalty.</li>
+            <li>Validated pipeline robustness via 15+ ablation studies (residual learning, allocation granularity), slashing the Composite Score by 15.5% to propel the team from 9th to 4th place.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Experience</h2>
+        <div class="resume-entry">
+          <p class="resume-entry-head">
+            <span class="resume-entry-title">Data Analyst &middot; Atlas, UIUC</span>
+          </p>
+          <ul>
+            <li>Architected automated SQL and Excel-based ETL workflows to clean and transform complex institutional datasets, delivering analysis-ready tables and slashing manual preparation time by 40%.</li>
+            <li>Developed interactive Tableau dashboards to monitor cross-functional operational KPIs, empowering senior management to dynamically optimize workforce allocation and staffing decisions.</li>
+            <li>Spearheaded weekly data reviews with leadership, translating raw analytics into actionable slide decks to drive strategic schedule adjustments and operational workflow optimizations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Additional</h2>
+        <ul>
+          <li>Personal Website: <a href="https://yu-wang20.github.io/">yu-wang20.github.io</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/yuwang3120">linkedin.com/in/yuwang3120</a></li>
+          <li>GitHub: <a href="https://github.com/Yu-Wang20">Yu-Wang20</a></li>
+        </ul>
+      </section>
     </main>
   </div>
 </body>
