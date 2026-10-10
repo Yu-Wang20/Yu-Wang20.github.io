@@ -109,6 +109,15 @@ li {
   font-weight: bold;
 }
 
+/* Term label after a course title, e.g. "(Spring 2027)" for planned courses.
+   Same muted italic as .project-context; nowrap keeps "Spring 2027" on one line on phones. */
+.course-term {
+  color: #666;
+  font-style: italic;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
 /* ---------- Resume ---------- */
 .resume-meta {
   margin: 0 0 8px;
