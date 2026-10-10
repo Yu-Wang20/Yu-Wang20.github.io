@@ -196,6 +196,13 @@ li {
   margin: 0;
 }
 
+/* Attachment link line under a project description, e.g. "Report (PDF)".
+   Small top gap so it reads as part of the same project block. */
+.project-links {
+  margin: 0.3em 0 0;
+  font-size: 0.95em;
+}
+
 /* ---------- Avatar ---------- */
 .avatar {
   float: right;
