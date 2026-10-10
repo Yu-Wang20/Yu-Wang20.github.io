@@ -170,7 +170,18 @@ li {
 }
 
 .resume-entry ul li {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* Group label inside an experience entry, e.g. "Industry & Policy Research".
+   Darker site gold (#8e6f24, ~4.7:1 on white) so small caps stay readable. */
+.entry-group {
+  margin: 22px 0 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8e6f24;
 }
 
 /* ---------- Projects ---------- */
