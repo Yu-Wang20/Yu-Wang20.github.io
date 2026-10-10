@@ -240,8 +240,19 @@ li {
     margin-bottom: 44px;
   }
 
+  /* Four nav items: slightly smaller type and a flex gap so they fit on one
+     line at ~375px, and wrap into tidy rows (no stray indent) on narrower screens. */
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 2px;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+  }
+
   .nav a {
-    margin-left: 16px;
+    margin-left: 0;
   }
 
   h1 {
